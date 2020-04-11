@@ -1,6 +1,12 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Lickety-Spit</title>
+	<title>Lickety-Spit | A tasty puzzle game</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Discover which companies are using the color Faux-Blue-violet (#7639fc).">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91441927-12"></script>
@@ -12,8 +18,98 @@
 	  gtag('config', 'UA-91441927-12');
 	</script>
 
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+
+	<style>
+	html {
+	  height: 100%;
+	  font-family: 'Raleway', sans-serif;
+	}
+	.full {
+	    height: 100%;
+	    width: 100%;
+	    left: 0;
+	    top: 0;
+	    overflow: hidden;
+	    position: fixed;
+		background-image: linear-gradient(185deg, rgb(55, 242, 102) 50%, rgb(255, 140, 200) 50%);
+		height: 100%;
+	}
+
+	.displayContainer {
+	    display: block;
+	    height: 100%;
+	    width: 100%;
+	}
+	.centerPseudo {
+	    display: inline-block;
+	    text-align: center;
+	}
+	.centerPseudo::before {
+	    content: '';
+	    display: inline-block;
+	    height: 100%;
+	    vertical-align: middle;
+	}
+
+	#highlight {
+
+	}
+
+	a {
+		background-color:rgb(94, 250, 247, 0.5);
+		padding:4px;
+		color:inherit;
+	}
+
+	a:hover {
+		background-color:rgba(94, 250, 247, 1);
+	}
+	.flex-container {
+	    height: 100%;
+	    padding: 0;
+	    margin: 0px 48px;
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.row {
+	    width: auto;
+	    box-shadow: 24px 24px 0 0 rgba(110, 36, 141, 0.5);
+	    outline: 8px solid rgb(110, 36, 141);
+	}
+	.flex-item {
+	    background-color: white;
+	    color: rgb(28, 42, 57);
+	    padding:24px;
+	    font-size:32px;
+	    text-align: center;
+	}
+
+	.pink {
+		background-color:rgb(234, 76, 136);
+		padding:4px 12px;
+		color:white;
+		border-radius:164px;
+		
+	}
+	</style>
 </head>
-<body>
-<h1>Lickety-Spit (indie game)</h1>
+<body class="full">
+<div class="flex-container">
+    <div class="row"> 
+		<div class="flex-item">
+        	Lickety-Spit is a cute puzzle game about using your <span class="pink">tongue</span> to move things!
+        </div>
+        <div class="flex-item">
+        	Follow @<a href="https://twitter.com/licketyspitgame" title="Twitter @licketyspitgame" target="_blank">licketyspitgame</a> and <a href="https://twitter.com/zackbanack" title="Twitter @zackbanack" target="_blank">zackbanack</a> for updates
+		</div>
+    </div>
+</div>
 </body>
 </html>
+
