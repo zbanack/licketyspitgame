@@ -18,12 +18,16 @@
 	  gtag('config', 'UA-91441927-12');
 	</script>
 
+	<link rel="icon" type="image/png" href="img/favicon.jpg" />
+
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
 
 	<style>
 	html {
-	  height: 100%;
-	  font-family: 'Raleway', sans-serif;
+		height: 100%;
+		font-family: 'Raleway', sans-serif;
+		background-image: url("img/tiles.png"), linear-gradient(45deg, rgb(55, 242, 102) 15%, rgb(255, 140, 200) 15%);
+		background-repeat: repeat;
 	}
 	.full {
 
@@ -31,15 +35,9 @@
 	    width: 100%;
 	    left: 0;
 	    top: 0;
-	    overflow: hidden;
-	    position: fixed;
-		background-image: url("img/tiles.png"), linear-gradient(185deg, rgb(55, 242, 102) 50%, rgb(255, 140, 200) 50%);
-		background-repeat: repeat;
-		height: 100%;
 	}
 
 	.displayContainer {
-	    display: block;
 	    height: 100%;
 	    width: 100%;
 	}
@@ -53,11 +51,6 @@
 	    height: 100%;
 	    vertical-align: middle;
 	}
-
-	#highlight {
-
-	}
-
 	a {
 		background-color:rgb(94, 250, 247, 0.5);
 		padding:4px;
@@ -68,7 +61,7 @@
 		background-color:rgba(94, 250, 247, 1);
 	}
 	.flex-container {
-		height:100%;
+		height:90%;
 		transform: rotate(-0.5deg);
 	    padding: 0;
 	    margin: 0px 15%;
@@ -82,8 +75,8 @@
 	}
 	.row {
 	    width: auto;
-	    box-shadow: 24px 24px 0 0 rgb(171, 105, 198);
-	    outline: 8px solid rgb(110, 36, 141);
+	    box-shadow: 24px 24px 0 0 rgb(142, 68, 173);
+	    outline: 12px solid rgb(142, 68, 173);
 	}
 	.flex-item {
 	    background-color: white;
@@ -103,29 +96,24 @@
 
 	.pic {
 
-	    box-shadow: 24px 24px 0 0 rgb(171, 105, 198);
-	    outline: 8px solid rgb(110, 36, 141);
+	    box-shadow: 20px 20px 0 0 rgb(243, 156, 18);
+	    outline: 8px solid rgb(243, 156, 18);
 	    margin:20px;
-		transform: rotate(0.5deg);
+		transform: rotate(1deg);
+	}
+
+	.flip {
+		transform: rotate(-1deg);
 	}
 
 	.spacer {
-		height:40px;
+		height:64px;
 	}
-
-	.gallery {
-	  max-width: 1200px;
-	  display: flex;
-	  align-items: center;
-	  -webkit-justify-content: center;
-	  /* Safari */
-	  justify-content: center;
-	}
-
 	img {
 	  max-width: 320px;
 	  height: auto;
 	}
+
 	</style>
 </head>
 <body class="full">
@@ -141,7 +129,7 @@
 			<div class="spacer">
 		    <img class="pic" src="img/beta_pic1.png" alt="beta image 1">
 
-		    <img class="pic" src="img/beta_pic2.png" alt="beta image 2">
+		    <img class="pic flip" src="img/beta_pic2.png" alt="beta image 2">
 
 		    <img class="pic" src="img/beta_pic3.png" alt="beta image 3">
 		    </div>
