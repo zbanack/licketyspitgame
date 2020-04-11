@@ -26,6 +26,7 @@
 	  font-family: 'Raleway', sans-serif;
 	}
 	.full {
+
 	    height: 100%;
 	    width: 100%;
 	    left: 0;
@@ -67,6 +68,8 @@
 		background-color:rgba(94, 250, 247, 1);
 	}
 	.flex-container {
+		height:100%;
+		transform: rotate(-0.5deg);
 	    padding: 0;
 	    margin: 0px 15%;
 	    display: -webkit-box;
@@ -79,13 +82,14 @@
 	}
 	.row {
 	    width: auto;
-	    box-shadow: 24px 24px 0 0 rgba(110, 36, 141, 0.5);
+	    box-shadow: 24px 24px 0 0 rgb(171, 105, 198);
 	    outline: 8px solid rgb(110, 36, 141);
 	}
 	.flex-item {
 	    background-color: white;
 	    color: rgb(28, 42, 57);
 	    padding:24px;
+	    border:2px solid white;
 	    font-size:32px;
 	    text-align: center;
 	}
@@ -94,8 +98,19 @@
 		background-color:rgb(234, 76, 136);
 		padding:4px 12px;
 		color:white;
-		border-radius:164px;
-		
+		border-radius:20px;
+	}
+
+	.pic {
+
+	    box-shadow: 24px 24px 0 0 rgb(171, 105, 198);
+	    outline: 8px solid rgb(110, 36, 141);
+	    margin:20px;
+		transform: rotate(0.5deg);
+	}
+
+	.spacer {
+		height:40px;
 	}
 
 	.gallery {
@@ -107,19 +122,14 @@
 	  justify-content: center;
 	}
 
-	.gallery-image {
-	  padding: 32px;
-	}
-
 	img {
-	  width: 100%;
+	  max-width: 320px;
 	  height: auto;
-	  display: block;
 	}
 	</style>
 </head>
 <body class="full">
-<div class="flex-container" style="height:50%; transform: rotate(-0.5deg);">
+<div class="flex-container">
     <div class="row"> 
 		<div class="flex-item">
         	Lickety-Spit is a cute puzzle game about using your <span class="pink">tongue</span> to move things!
@@ -127,20 +137,14 @@
         <div class="flex-item">
         	Follow @<a href="https://twitter.com/licketyspitgame" title="Twitter @licketyspitgame" target="_blank">licketyspitgame</a> and @<a href="https://twitter.com/zackbanack" title="Twitter @zackbanack" target="_blank">zackbanack</a> for updates
 		</div>
-    </div>
-</div>
-<div class="flex-container" style="transform: rotate(0.5deg);">
-    <div class="row">
-		<div class="gallery">
-		  <div class="gallery-item">
-		    <img src="img/beta_pic1.png" alt="beta image 1">
-		  </div>
-		  <div class="gallery-item">
-		    <img src="img/beta_pic2.png" alt="beta image 2">
-		  </div>
-		  <div class="gallery-item">
-		    <img src="img/beta_pic3.png" alt="beta image 3">
-		  </div>
+		<div class="flex-item">
+			<div class="spacer">
+		    <img class="pic" src="img/beta_pic1.png" alt="beta image 1">
+
+		    <img class="pic" src="img/beta_pic2.png" alt="beta image 2">
+
+		    <img class="pic" src="img/beta_pic3.png" alt="beta image 3">
+		    </div>
 		</div>
     </div>
 </div>
